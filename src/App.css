@@ -97,7 +97,7 @@ body {
   color: black;
   text-align: center;
   height: 1.5em;
-  opacity: .5;
+  opacity: .9;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
   color: #F2CEE6;
@@ -122,7 +122,7 @@ body {
   padding: 0 .5em;
   line-height: 1.5em;
   color: #0D1B1E;
-  background-color: #fcfcfa;
+  background-color: #fff;
 }
 
 .aboutSection {
@@ -170,6 +170,59 @@ body {
   text-decoration: underline;
 }
 
+
+.skillsSection {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillItemContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.skillItem {
+  width: 475px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.icon{
+  width: 75px;
+  height: 75px;
+}
+.skillTitle{
+  color:#7798AB;
+
+}
+
+.skillSubText {
+  margin-left:.5rem;
+  margin-right: .5rem;
+  font-weight: 100;
+}
+
+.skillList {
+  list-style-type: circle;
+  list-style-position: outside;
+  list-style-image: none;
+  color: #b43088;
+  font-size: 20px;
+}
+
+.skillBullets {
+  padding: .5rem;
+  margin-left: 3.5rem; 
+  margin-right: 3.5rem;
+  margin-bottom: 2rem;  
+}
+
+
+
 @media only screen 
   and (min-width: 319px) 
   and (max-width: 480px){
@@ -196,6 +249,9 @@ body {
     .navItem {
       margin: 0 1rem;
     }
+    .aboutSection {
+      height: 100%;
+    }
     .aboutContainer {
       width: 90%;
     }
@@ -204,5 +260,16 @@ body {
     }
     .picContainer{
       justify-content: center;
+    }
+  }
+
+
+  @media only screen 
+  and (max-width: 1257px){
+    .aboutSection{
+      height: 100%;
+    }
+    .skillsSection {
+      height: 100%;
     }
   }
