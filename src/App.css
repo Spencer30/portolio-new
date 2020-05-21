@@ -153,7 +153,6 @@ body {
 .picContainer {
   flex: 40%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -170,3 +169,40 @@ body {
   font-weight: 900;
   text-decoration: underline;
 }
+
+@media only screen 
+  and (min-width: 319px) 
+  and (max-width: 480px){
+    .mainTitle {
+      font-size: 30px;
+    }
+    .subTitle {
+      font-size: 24px;
+    }
+    .navBar {
+      top: 0;
+      width: 100%;
+      background-color: rgba(13, 27, 30, 0.563);
+    }
+    .navList {
+      margin: 0;
+      font-size: 16px;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      height: 50px;
+
+    }
+    .navItem {
+      margin: 0 1rem;
+    }
+    .aboutContainer {
+      width: 90%;
+    }
+    .hr-text {
+      font-size: 28px;
+    }
+    .picContainer{
+      justify-content: center;
+    }
+  }
