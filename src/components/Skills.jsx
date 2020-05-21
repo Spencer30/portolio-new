@@ -24,7 +24,7 @@ const Skills = () => {
         />
       </div>
       <div style={{display: 'flex', flexWrap:'wrap', justifyContent:'center', marginTop:25}}>
-    <div style={{textAlign:'center'}}>
+    <div style={{textAlign:'center', width:'100%'}}>
         <h2 style={{fontWeight:200}}>I'm comfortble working with these technologies:</h2>
     </div>
       <ul className="skillList" style={{display: 'flex', flexWrap:'wrap', justifyContent:'center'}}>
