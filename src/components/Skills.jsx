@@ -11,16 +11,19 @@ const Skills = () => {
           img="jigsaw1"
           title="Problem Solving"
           subText="I understand to solve a complex problem requires breaking the problem down, working through possible solutions and determining what is the best path forward."
+          alt="Jigsaw"
         />
         <SkillItem
           img="report"
           title="Business Acumen"
           subText="My experience has given me the opportunity to work with a wide range of clients, understand their needs and be able to effectively communicate back to the team."
+          alt="Business Report"
         />
         <SkillItem
           img="code"
           title="Coding"
           subText="In addition to LaunchCode, I have been teaching myself to code for the last nine months and have developed a strong passion for it. Major problems can be solved with a few lines of code. I enjoy working with Javascript, especially React."
+          alt="Computer Code"
         />
       </div>
       <div style={{display: 'flex', flexWrap:'wrap', justifyContent:'center', marginTop:25}}>

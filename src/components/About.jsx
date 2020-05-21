@@ -11,6 +11,7 @@ const About = () => {
             <img
               className="profilePic"
               src={require("../images/profile_pic3.png")}
+              alt="Spencer Lyons"
             />
           </div>
           <div className="textContentContainer">
