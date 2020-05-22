@@ -38,6 +38,16 @@ const projectList = [
         gitHub:'https://github.com/Spencer30/socialUp_react_website',
         public:true,
         techStack:'React, Node'
+    },
+    {
+        id:5,
+        title:'BlackJack',
+        summary:'Play blackjack online. Start with $500 and see how much you can win! I built this with HTML, CSS, and vanilla JavaScript. Rules are similar to what you see at a casino.',
+        img:require('../images/blackJackFinal.png'),
+        website:'https://spencer30.github.io/simple_blackjack/',
+        gitHub:'https://github.com/Spencer30/simple_blackjack',
+        public:true,
+        techStack:'HTML, CSS, JavaScript'
     }
 ];
 

@@ -318,7 +318,7 @@ a {
 
 @media only screen 
   and (min-width: 319px) 
-  and (max-width: 480px){
+  and (max-width: 550px){
     .mainTitle {
       font-size: 30px;
     }
@@ -361,6 +361,15 @@ a {
     .skillList{
       padding-left:2rem;
       padding-right: 2rem;
+    }
+    .card{
+      width: 100%;
+    }
+    .projectPic{
+      width: 100%;
+    }
+    .projectsContainer{
+      width: 100%;
     }
   }
 
