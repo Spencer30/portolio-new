@@ -3,7 +3,7 @@ const projectList = [
         id:1,
         title:'Bowling Buddy',
         summary:'Keep track of your bowling games and stats. You can select your ball, alley, and type of bowling for each game. Use stats to improve your game and track your progress.',
-        img:require('../images/bowlingBuddyFinal1.png'),
+        img:require('../images/bowlingBuddyFinal3.png'),
         website:'https://bowlingbuddy.herokuapp.com/',
         gitHub:'#Contact',
         public:false,
@@ -17,7 +17,7 @@ const projectList = [
         website:'https://search-the-news.herokuapp.com/',
         gitHub:'#Contact',
         public:false,
-        techStack:'React, Node, MySQL'
+        techStack:'React, Node'
     },
     {
         id:3,
@@ -46,6 +46,26 @@ const projectList = [
         img:require('../images/blackJackFinal.png'),
         website:'https://spencer30.github.io/simple_blackjack/',
         gitHub:'https://github.com/Spencer30/simple_blackjack',
+        public:true,
+        techStack:'HTML, CSS, JavaScript'
+    },
+    {
+        id:6,
+        title:'Bowling Score Calculator',
+        summary:'My first JavaScript game I created. A very simple web app that caluclates your score based off the number of pins you knock down each frame. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
+        img:require('../images/bowlFinal.png'),
+        website:'https://spencer30.github.io/bowling-calculator/',
+        gitHub:'https://github.com/Spencer30/bowling-calculator',
+        public:true,
+        techStack:'HTML, CSS, JavaScript'
+    },
+    {
+        id:7,
+        title:'Magic Eightball',
+        summary:'My first web app I created. Very simple app that takes a childhood toy to the web. Has all the original answers from the real thing.',
+        img:require('../images/eightballFinal.png'),
+        website:'https://spencer30.github.io/magic-eightball/',
+        gitHub:'https://github.com/Spencer30/magic-eightball',
         public:true,
         techStack:'HTML, CSS, JavaScript'
     }

@@ -260,12 +260,24 @@ a {
   height:300px;
 }
 
+.imgOverlay {
+  background-color: black;
+  width:450px;
+  height:300px;
+  opacity: .8;
+  position: absolute;
+  top:0
+}
+
 .webGit {
   margin: 0;
   margin-right:15px;
   margin-left: 3px;
 }
 
+.webGitLink{
+  color:#7798AB;
+}
 .webGitLink:hover{
   color:#F2CEE6;
 }
@@ -367,6 +379,9 @@ a {
     }
     .projectPic{
       width: 100%;
+    }
+    .imgOverlay{
+      width:100%;
     }
     .projectsContainer{
       width: 100%;
