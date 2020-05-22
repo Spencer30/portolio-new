@@ -2,7 +2,7 @@ const projectList = [
     {
         id:1,
         title:'Bowling Buddy',
-        summary:'Keep track of your bowling games and stats. You can select your ball, alley, and type of bowling for each game. Use stats to improve your game and track your progress.',
+        summary:'Keep track of your bowling games and stats. You can select your ball, alley, and type of bowling for each game. Track your progress and use stats to improve your game.',
         img:require('../images/bowlingBuddyReduced.png'),
         website:'https://bowlingbuddy.herokuapp.com/',
         gitHub:'#Contact',
@@ -12,7 +12,7 @@ const projectList = [
     {
         id:2,
         title:'Search The News',
-        summary:'Search for your news using a google like search. Widgets display your local weather and the a random DOW Jones stock. ',
+        summary:'Search for your news using a Google like search. Widgets display your local weather and a random DOW Jones stock. Styled the app with Semantic UI.',
         img:require('../images/searchReduced.png'),
         website:'https://search-the-news.herokuapp.com/',
         gitHub:'#Contact',
@@ -52,7 +52,7 @@ const projectList = [
     {
         id:6,
         title:'Bowling Score Calculator',
-        summary:'My first JavaScript game I created. A very simple web app that caluclates your score based off the number of pins you knock down each frame. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
+        summary:'My first JavaScript game I created. A simple web app that caluclates your score based off the number of pins you knock down each frame. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
         img:require('../images/bowlReduced.png'),
         website:'https://spencer30.github.io/bowling-calculator/',
         gitHub:'https://github.com/Spencer30/bowling-calculator',
@@ -62,7 +62,7 @@ const projectList = [
     {
         id:7,
         title:'Magic Eightball',
-        summary:'My first web app I created. Very simple app that takes a childhood toy to the web. Has all the original answers from the real thing.',
+        summary:'My first web application I created. Bringing a childhood toy to the web. Has all the original answers from the real thing.',
         img:require('../images/eightballReduced.png'),
         website:'https://spencer30.github.io/magic-eightball/',
         gitHub:'https://github.com/Spencer30/magic-eightball',
