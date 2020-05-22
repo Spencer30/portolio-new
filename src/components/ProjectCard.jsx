@@ -16,7 +16,7 @@ const ProjectCard = (props) => {
   return (
     <div className="card" onMouseOver={handleOver} onMouseOut={handleOut}>
       <div style={{ textAlign: "center", position:'relative', width:'100%' }}>
-        <img className="projectPic" src={props.img} />
+        <img className="projectPic" src={props.img} alt="project snapshot"/>
         <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
             <h2 style={{color:'white'}}>Tech Stack:</h2>
             <h4 style={{color:'#F2CEE6'}}>{props.techStack}</h4>

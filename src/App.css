@@ -327,6 +327,37 @@ a {
   color:#F2CEE6;
 }
 
+.star {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  width:5px;
+  height: 5px;
+  opacity: .7;
+  animation: blaze 4s infinite linear;
+}
+
+@keyframes blaze {
+  0%{
+    top:0%;
+    right:0%;
+  }
+  10%{
+    top: 10%;
+    right: 10%;
+  }
+  20%{
+    top: 20%;
+    right: 20%;
+  }
+  100% {
+    top: 100%;
+    right: 100%;
+    opacity: .1;
+  }
+}
+
+
 
 @media only screen 
   and (min-width: 319px) 

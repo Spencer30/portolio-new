@@ -6,6 +6,9 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 
 const Contact = () => {
     return <div id="Contact" className="contactSection">
+        <img className="star" src={require('../images/star.png')} alt="star"/>
+        {/* <img className="star star2" src={require('../images/star.png')} /> */}
+
         <div className="contactMe">
             <h1>Contact Me</h1>
             <p className="emailPhone"><LinkedInIcon /><a className="email" href="https://www.linkedin.com/in/spencer-lyons-21b2981b/">Spencer Lyons</a></p>
