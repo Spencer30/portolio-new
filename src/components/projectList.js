@@ -4,7 +4,7 @@ const projectList = [
         title:'Bowling Buddy',
         summary:'Keep track of your bowling games and stats. You can select your ball, alley, and type of bowling for each game. Track your progress and use stats to improve your game.',
         img:require('../images/bowlingBuddyReduced.png'),
-        website:'https://bowlingbuddy.herokuapp.com/',
+        website:'https://www.bowling-buddy.com/',
         gitHub:'#Contact',
         public:false,
         techStack:'React, Node, MySQL'

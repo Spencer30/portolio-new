@@ -3,7 +3,7 @@ import PageHeading from "./PageHeading";
 
 const About = () => {
   return (
-    <div id="About"className="aboutSection">
+    <div id="About" className="aboutSection">
       <PageHeading heading="A Little About Me" />
       <div className="aboutContainerParent">
         <div className="aboutContainer">
@@ -29,24 +29,33 @@ const About = () => {
             <h2 className="aboutTitle">LauchCode Graduate</h2>
             <p>
               I graduated from LaunchCode's LC101 program and am currently in
-              their LiftOff program. <a className="launchLink" href="https://www.launchcode.org/about" target="_blank" rel="noopener noreferrer">LaunchCode</a> is a national nonprofit offering
-              free tech education and job placement opportunities. Their goal is
-              to bring new people from all backgrounds into the tech field and
-              reshape the way employers think about hiring. LaunchCode is highly
-              competitive. The amount of value and education the program offers
-              is exceptional and I'm very thankful to get that experience. My
-              goal is to take my knowledge and apply it to the real world.
+              their LiftOff program.{" "}
+              <a
+                className="launchLink"
+                href="https://www.launchcode.org/about"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LaunchCode
+              </a>{" "}
+              is a national nonprofit offering free tech education and job
+              placement opportunities. Their goal is to bring new people from
+              all backgrounds into the tech field and reshape the way employers
+              think about hiring. LaunchCode is highly competitive. The amount
+              of value and education the program offers is exceptional and I'm
+              very thankful to get that experience. My goal is to take my
+              knowledge and apply it to the real world.
             </p>
             <h2 className="aboutTitle">What I'm Looking For</h2>
             <p>
-              I'm currently seeking a role as a full time web developer. My
-              strength is with JavaScript, so I am looking to utilize it either
-              working with React or Node. My business background has given me
-              the chance to see both sides of the equation between business and
-              technology teams. I understand the high cost that comes with
-              breakdown of communication between the two. I believe I can help
-              fill those gaps and make sure challenges from both sides are
-              communicated effectively.
+              I'm currently seeking a role as a full time developer. My strength
+              is with JavaScript, so I would love to work with React or Node but
+              open to learning other frameworks and languages. My business
+              background has given me the chance to see both sides of the
+              equation between business and technology teams. I understand the
+              high cost that comes with breakdown of communication between the
+              two. I believe I can help fill those gaps and make sure challenges
+              from both sides are communicated effectively.
             </p>
           </div>
         </div>
