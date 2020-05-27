@@ -27,7 +27,7 @@ const projectList = [
         website:'https://play-video-poker.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/video_poker',
         public:true,
-        techStack:'React, Node, MySQL'
+        techStack:'React, Node'
     },
     {
         id:4,
