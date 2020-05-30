@@ -58,17 +58,17 @@ const projectList = [
         gitHub:'https://github.com/Spencer30/bowling-calculator',
         public:true,
         techStack:'HTML, CSS, JavaScript'
-    },
-    {
-        id:7,
-        title:'Magic Eightball',
-        summary:'My first web application I created. Bringing a childhood toy to the web. Has all the original answers from the real thing.',
-        img:require('../images/eightballReduced.png'),
-        website:'https://spencer30.github.io/magic-eightball/',
-        gitHub:'https://github.com/Spencer30/magic-eightball',
-        public:true,
-        techStack:'HTML, CSS, JavaScript'
     }
+    // {
+    //     id:7,
+    //     title:'Magic Eightball',
+    //     summary:'My first web application I created. Bringing a childhood toy to the web. Has all the original answers from the real thing.',
+    //     img:require('../images/eightballReduced.png'),
+    //     website:'https://spencer30.github.io/magic-eightball/',
+    //     gitHub:'https://github.com/Spencer30/magic-eightball',
+    //     public:true,
+    //     techStack:'HTML, CSS, JavaScript'
+    // }
 ];
 
 export default projectList;
