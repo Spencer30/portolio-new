@@ -28,8 +28,8 @@ const About = () => {
             </p>
             <h2 className="aboutTitle">LauchCode Graduate</h2>
             <p>
-              I graduated from LaunchCode's LC101 program and am currently in
-              their LiftOff program.{" "}
+              I graduated from LaunchCode's LC101 program this past March and
+              just finished their LiftOff program in June.{" "}
               <a
                 className="launchLink"
                 href="https://www.launchcode.org/about"
@@ -46,11 +46,13 @@ const About = () => {
               very thankful to get that experience. My goal is to take my
               knowledge and apply it to the real world.
             </p>
-            <h2 className="aboutTitle">What I'm Looking For</h2>
+            <h2 className="aboutTitle">Ready To Work</h2>
             <p>
               I'm currently seeking a role as a full time developer. My strength
               is with JavaScript, so I would love to work with React or Node but
-              open to learning other frameworks and languages. My business
+              eager to learn other frameworks and languages. I enjoy working in
+              small teams and in a collaborative environment where ideas and
+              thoughts are shared freely to solve problems. My business
               background has given me the chance to see both sides of the
               equation between business and technology teams. I understand the
               high cost that comes with breakdown of communication between the
