@@ -15,8 +15,8 @@ const projectList = [
         summary:'Search for your news using a Google like search. Widgets display your local weather and a random DOW Jones stock. Styled the app with Semantic UI.',
         img:require('../images/searchReduced.png'),
         website:'https://search-the-news.herokuapp.com/',
-        gitHub:'#Contact',
-        public:false,
+        gitHub:'https://github.com/Spencer30/search-the-news',
+        public:true,
         techStack:'React, Node'
     },
     {
