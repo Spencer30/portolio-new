@@ -3,7 +3,7 @@
     #0D1B1E
     #C3DBC5
     #E8DCB9
-    #F2CEE6
+    #b43088
 */
 
 body {
@@ -57,7 +57,7 @@ a {
 }
 
 .navLink:hover {
-  color:#F2CEE6;
+  color:#b43088;
 }
 
 .navLink {
@@ -108,13 +108,13 @@ a {
   opacity: .9;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  color: #F2CEE6;
+  color: #b43088;
   width: 100%;
 }
 
 .hr-text:before {
   content: '';
-  background: linear-gradient(to right, transparent, #F2CEE6, transparent);
+  background: linear-gradient(to right, transparent, #b43088, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -143,13 +143,13 @@ a {
   opacity: .9;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  color: #F2CEE6;
+  color: #b43088;
   width: 100%;
 }
 
 .hr-text-dark:before {
   content: '';
-  background: linear-gradient(to right, transparent, #F2CEE6, transparent);
+  background: linear-gradient(to right, transparent, #b43088, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -189,7 +189,7 @@ a {
 
 .profilePic {
   border-radius: 50%;
-  border: 7px solid #F2CEE6;
+  border: 7px solid #b43088;
 
 }
 
@@ -316,7 +316,7 @@ a {
   color:#7798AB;
 }
 .webGitLink:hover{
-  color:#F2CEE6;
+  color:#b43088;
 }
 
 
@@ -361,7 +361,7 @@ a {
 }
 
 .email:hover{
-  color:#F2CEE6;
+  color:#b43088;
 }
 
 .star {
@@ -455,7 +455,7 @@ a {
       width: 100%;
     }
     .moonIcon {
-      padding-top: 20px;
+      padding-top: 24px;
     }
   }
 

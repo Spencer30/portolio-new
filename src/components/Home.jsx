@@ -3,11 +3,11 @@ import Nav from "./Nav";
 
 const Home = props => {
   return (
-    <div style={{position:'relative'}}>
-      <img src={props.darkMode ? require('../images/waterfallReduced-dark.jpg') : require('../images/waterfallReduced.jpg')} className="bgImage" alt="waterfall"/>
+    <div style={{position:'relative', backgroundImage:props.darkMode ? `url(${require('../images/waterfallReduced-dark.jpg')})` : `url(${require('../images/waterfallReduced.jpg')})`}} className="bgImage">
+      {/* <img src={props.darkMode ? require('../images/waterfallReduced-dark.jpg') : require('../images/waterfallReduced.jpg')} className="bgImage" alt="waterfall"/> */}
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange}/>
       <div className="homeTextContainer" style={styles.textContainer}>
-        <h1 className="mainTitle">Hi! I'm <span style={{color:'#F2CEE6'}}>Spencer Lyons</span></h1>
+        <h1 className="mainTitle">Hi! I'm <span style={{color:props.darkMode ? '#b43088' : 'white'}}>Spencer Lyons</span></h1>
         <h3 className="subTitle" >A Software Devloper</h3>
       </div>
     </div>

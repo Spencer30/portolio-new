@@ -20,14 +20,14 @@ const ProjectCard = (props) => {
         <img className="projectPic" src={props.img} alt="project snapshot"/>
         <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
             <h2 style={{color:'white'}}>Tech Stack:</h2>
-            <h4 style={{color:'#F2CEE6'}}>{props.techStack}</h4>
+            <h4 style={{color:'#b43088'}}>{props.techStack}</h4>
         </div>
       </div>
       <div className="cardText" style={{color: props.darkMode ? colors.light : '' }}>
         <h2 style={{ marginBottom: 3 }}>{props.title}</h2>
         <hr
           style={{
-            border: "3px solid #F2CEE6",
+            border: "3px solid #b43088",
             width: 200,
             borderRadius: 25,
             margin: 0,
