@@ -2,8 +2,10 @@ import React from "react";
 import PageHeading from "./PageHeading";
 import ProjectCard from "./ProjectCard";
 import projectList from "./projectList";
+import colors from './colors'
 
-const Projects = () => {
+
+const Projects = props => {
   const createCard = (card) => {
     return (
       <ProjectCard
@@ -16,14 +18,15 @@ const Projects = () => {
         gitHub={card.gitHub}
         public={card.public}
         techStack={card.techStack}
+        darkMode={props.darkMode}
         alt="project"
       />
     );
   };
 
   return (
-    <div id="Projects" className="projectsSection">
-      <PageHeading heading="My Projects" />
+    <div id="Projects" className="projectsSection" style={{backgroundColor: props.darkMode ? colors.dark : colors.light }}>
+      <PageHeading heading="My Projects" darkMode={props.darkMode}/>
       <div style={{display:'flex', justifyContent:'center'}}>
       <div className="projectsContainer">
             {projectList.map(createCard)}

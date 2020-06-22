@@ -21,7 +21,7 @@ a {
 }
 
 .bgImage {
-  background-image: url('./images/waterfallReduced.jpg');
+  /* background-image: url('./images/waterfallReduced.jpg'); */
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -30,6 +30,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
 }
 
 .navBar {
@@ -38,7 +39,7 @@ a {
   margin: 0;
   color: white;
   position: absolute;
-  top: 1rem
+  top: 1rem;
 }
 
 .navList {
@@ -102,7 +103,6 @@ a {
   position: relative;
   outline: 0;
   border: 0;
-  color: black;
   text-align: center;
   height: 1.5em;
   opacity: .9;
@@ -131,6 +131,41 @@ a {
   line-height: 1.5em;
   color: #0D1B1E;
   background-color: #fff;
+}
+
+.hr-text-dark {
+  line-height: 3rem;
+  position: relative;
+  outline: 0;
+  border: 0;
+  text-align: center;
+  height: 1.5em;
+  opacity: .9;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #F2CEE6;
+  width: 100%;
+}
+
+.hr-text-dark:before {
+  content: '';
+  background: linear-gradient(to right, transparent, #F2CEE6, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+}
+
+.hr-text-dark:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 .5em;
+  line-height: 1.5em;
+  color: white;
+  background-color: #121212;
 }
 
 .aboutSection {
@@ -236,7 +271,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 
 }
 
@@ -268,7 +303,7 @@ a {
   height:300px;
   opacity: .8;
   position: absolute;
-  top:0
+  top:0;
 }
 
 .webGit {
@@ -289,7 +324,7 @@ a {
 
 
 .contactSection {
-  background-image: url('./images/night4.jpg');
+  /* background-image: url('./images/night4.jpg'); */
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -419,6 +454,9 @@ a {
     .projectsContainer{
       width: 100%;
     }
+    .moonIcon {
+      padding-top: 20px;
+    }
   }
 
 
@@ -432,5 +470,16 @@ a {
     }
     .picContainer{
       justify-content: center;
+    }
+  }
+
+  @media only screen 
+  and (min-width: 535px)
+  and (max-width: 1020px){
+    .mainTitle{
+      font-size: 46px;
+    }
+    .subTitle {
+      font-size: 34px;
     }
   }

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import LanguageIcon from "@material-ui/icons/Language";
 import GitHubIcon from "@material-ui/icons/GitHub";
+import colors from './colors';
 
 const ProjectCard = (props) => {
     const [hover, setHover] = useState(false);
@@ -22,7 +23,7 @@ const ProjectCard = (props) => {
             <h4 style={{color:'#F2CEE6'}}>{props.techStack}</h4>
         </div>
       </div>
-      <div className="cardText">
+      <div className="cardText" style={{color: props.darkMode ? colors.light : '' }}>
         <h2 style={{ marginBottom: 3 }}>{props.title}</h2>
         <hr
           style={{

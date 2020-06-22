@@ -1,10 +1,11 @@
 import React from "react";
 import PageHeading from "./PageHeading";
+import colors from './colors'
 
-const About = () => {
+const About = props => {
   return (
-    <div id="About" className="aboutSection">
-      <PageHeading heading="A Little About Me" />
+    <div id="About" className="aboutSection" style={{backgroundColor: props.darkMode ? colors.dark : colors.light }}>
+      <PageHeading heading="A Little About Me" darkMode={props.darkMode}/>
       <div className="aboutContainerParent">
         <div className="aboutContainer">
           <div className="picContainer">
@@ -16,7 +17,7 @@ const About = () => {
           </div>
           <div className="textContentContainer">
             <h2 className="aboutTitle">Back Story</h2>
-            <p>
+            <p style={{color: props.darkMode ? colors.light : '' }}>
               I grew up in Kansas City and went to the University of Missouri
               for college. After college, I left Kansas City for the East Coast.
               I landed in Philadelphia where I worked in the investment
@@ -27,7 +28,7 @@ const About = () => {
               coding has given me the chance to expand on those skills.
             </p>
             <h2 className="aboutTitle">LauchCode Graduate</h2>
-            <p>
+            <p style={{color: props.darkMode ? colors.light : '' }}>
               I graduated from LaunchCode's LC101 program this past March and
               just finished their LiftOff program in June.{" "}
               <a
@@ -35,6 +36,7 @@ const About = () => {
                 href="https://www.launchcode.org/about"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{color: props.darkMode ? colors.light : '' }}
               >
                 LaunchCode
               </a>{" "}
@@ -47,7 +49,7 @@ const About = () => {
               knowledge and apply it to the real world.
             </p>
             <h2 className="aboutTitle">Ready To Work</h2>
-            <p>
+            <p style={{color: props.darkMode ? colors.light : '' }}>
               I'm currently seeking a role as a full time developer. My strength
               is with JavaScript, so I would love to work with React or Node but
               eager to learn other frameworks and languages. I enjoy working in
