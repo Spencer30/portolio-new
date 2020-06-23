@@ -32,7 +32,7 @@ const Skills = props => {
       </div>
       <div style={{display: 'flex', flexWrap:'wrap', justifyContent:'center', marginTop:25}}>
     <div style={{textAlign:'center', width:'100%'}}>
-        <h2 style={{color:props.darkMode ? colors.light : '#0D1B1E', fontWeight: 200}}>I'm comfortble working with these technologies:</h2>
+        <h2 style={{color:props.darkMode ? colors.light : '#0D1B1E', fontWeight: 200}}>I'm comfortble working with:</h2>
     </div>
       <ul className="skillList" style={{display: 'flex', flexWrap:'wrap', justifyContent:'center'}}>
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >HTML</span></li>

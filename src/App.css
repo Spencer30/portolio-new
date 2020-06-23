@@ -371,7 +371,7 @@ a {
   width:5px;
   height: 5px;
   opacity: .7;
-  animation: blaze 6s 3 linear;
+  animation: blaze 6s infinite linear;
 }
 
 @keyframes blaze {

@@ -22,7 +22,7 @@ const projectList = [
     {
         id:3,
         title:'Video Poker',
-        summary:'Play video poker online. Taking a casino and bringing it to the web. Play up to 4 credits. Keep track of your wins and win percentage while you play.',
+        summary:'Play video poker online. Taking a casino game and bringing it to the web. Play up to 4 credits. Keep track of your wins and win percentage while you play.',
         img:require('../images/videoPokerReduced.png'),
         website:'https://play-video-poker.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/video_poker',
@@ -52,7 +52,7 @@ const projectList = [
     {
         id:6,
         title:'Bowling Calculator',
-        summary:'My first JavaScript game I created. A simple web app that caluclates your score based off the number of pins you knock down. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
+        summary:'My first JavaScript project. A simple web app that caluclates your score based off the number of pins you knock down. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
         img:require('../images/bowlReduced.png'),
         website:'https://spencer30.github.io/bowling-calculator/',
         gitHub:'https://github.com/Spencer30/bowling-calculator',
