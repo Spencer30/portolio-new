@@ -189,7 +189,7 @@ a {
 
 .profilePic {
   border-radius: 50%;
-  border: 7px solid #b43088;
+  border: 5px solid #b43088;
 
 }
 
@@ -371,7 +371,7 @@ a {
   width:5px;
   height: 5px;
   opacity: .7;
-  animation: blaze 4s infinite linear;
+  animation: blaze 8s 3 linear;
 }
 
 @keyframes blaze {
