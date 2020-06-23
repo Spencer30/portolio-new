@@ -12,7 +12,7 @@ const projectList = [
     {
         id:2,
         title:'Search The News',
-        summary:'Search for your news using a Google like search. Widgets display your local weather and a random DOW Jones stock. Styled the app with Semantic UI.',
+        summary:'Search for your news using a Google like search. Widgets display your local weather and a random Dow Jones stock. Styled the app with Semantic UI.',
         img:require('../images/searchReduced.png'),
         website:'https://search-the-news.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/search-the-news',
@@ -51,7 +51,7 @@ const projectList = [
     },
     {
         id:6,
-        title:'Bowling Score Calculator',
+        title:'Bowling Calculator',
         summary:'My first JavaScript game I created. A simple web app that caluclates your score based off the number of pins you knock down. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
         img:require('../images/bowlReduced.png'),
         website:'https://spencer30.github.io/bowling-calculator/',

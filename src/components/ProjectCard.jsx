@@ -28,9 +28,10 @@ const ProjectCard = (props) => {
         <hr
           style={{
             border: "3px solid #b43088",
-            width: 200,
+            width: 225,
             borderRadius: 25,
             margin: 0,
+            marginTop: 10
           }}
         ></hr>
         <p style={{height:100}}>{props.summary}</p>
