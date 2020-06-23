@@ -44,13 +44,13 @@ const ProjectCard = (props) => {
           }}
         >
           <LanguageIcon />
-          <h4 className="webGit" >
+          <h4 className="webGit" style={{marginLeft: 5}}>
             <a className="webGitLink" target="blank" href={props.website}>
-              Website
+            Website
             </a>
           </h4>
           <GitHubIcon />
-          <h4 className="webGit">
+          <h4 className="webGit" style={{marginLeft: 8}}>
             <a className="webGitLink" target={props.public ? "blank" : ""} href={props.gitHub}>
               {props.public ? "Github" : "Request for Access"}
             </a>
