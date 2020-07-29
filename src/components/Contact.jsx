@@ -8,7 +8,7 @@ import colors from './colors';
 const Contact = props => {
   const [loaded, setLoaded] = useState(false)
     return <div id="Contact" style={styles.container}>
-              <img src={require(`../images/night4${!loaded ? 'Loading' : ''}.jpg`)}  style={styles.img} alt="night sky" onLoad={() => setLoaded(true)}/>
+              <img src={require(`../images/night5${!loaded ? 'Loading' : ''}.jpg`)}  style={styles.img} alt="night sky" onLoad={() => setLoaded(true)}/>
             <div style={{display: props.darkMode ? 'block' : 'none'}}><div style={styles.overlay}></div></div>
         <img className="star" src={require('../images/star.png')} alt="star"/>
         {/* <img className="star star2" src={require('../images/star.png')} /> */}
