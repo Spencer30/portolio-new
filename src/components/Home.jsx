@@ -1,15 +1,18 @@
 import React from "react";
 import Nav from "./Nav";
+import { useState } from "react";
 
 const Home = (props) => {
+  const [loaded, setLoaded] = useState(false)
   return (
     <div
       style={{
         position: "relative",
-        backgroundImage: `url(${require("../images/waterfallReduced.jpg")})`,
+        // backgroundImage: `url(${require("../images/waterfallReduced.jpg")})`,
       }}
       className="bgImage"
     >
+      <img alt="waterfall" src={require(`../images/waterfallReduced1${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange} />
         <div className="homeTextContainer" style={styles.textContainer}>
           <h1 className="mainTitle">
@@ -44,6 +47,13 @@ const styles = {
     opacity: '75%',
     zIndex: 0,
   },
+  bgImage: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    top: 0,
+    left: 0,
+  }
 };
 
 export default Home;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -6,9 +6,10 @@ import colors from './colors';
 
 
 const Contact = props => {
-    return <div id="Contact" style={{position: 'relative'}}>
-              <img src={props.darkMode ? require('../images/night4-dark.jpg') : require('../images/night4.jpg')} className="contactSection" alt="night sky"/>
-
+  const [loaded, setLoaded] = useState(false)
+    return <div id="Contact" style={styles.container}>
+              <img src={require(`../images/night4${!loaded ? 'Loading' : ''}.jpg`)}  style={styles.img} alt="night sky" onLoad={() => setLoaded(true)}/>
+            <div style={{display: props.darkMode ? 'block' : 'none'}}><div style={styles.overlay}></div></div>
         <img className="star" src={require('../images/star.png')} alt="star"/>
         {/* <img className="star star2" src={require('../images/star.png')} /> */}
 
@@ -25,6 +26,11 @@ const Contact = props => {
 
 
 const styles = {
+  container: {
+    position: 'relative',
+    height:'100vh',
+    width: '100%',
+  },
     textContainer: {
       position: 'absolute',
       top: '50%',
@@ -33,6 +39,18 @@ const styles = {
       display: 'flex',
       flexDirection: 'column',
       width: '100%'
+    },
+    overlay: {
+      position:'absolute',
+      top:0,
+      left:0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0,0,0,.65)'
+    },
+    img: {
+      width: '100%',
+      height: '100%',
     }
   }
 export default Contact;
