@@ -4,7 +4,7 @@ import WbSunnyIcon from '@material-ui/icons/WbSunny';;//Sun
 
 const DarkModeButton = props => {
     return (
-        <div style={{width: 50, height: 50, cursor: 'pointer',}} className="moonIcon" onClick={props.onClick}>
+        <div style={{width: 50, height: 50, cursor: 'pointer', textAlign:'center'}} className="moonIcon" onClick={props.onClick}>
             {props.darkMode ? <WbSunnyIcon /> : <Brightness3Icon />}
         </div>
     )
