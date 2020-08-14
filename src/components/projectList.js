@@ -1,6 +1,26 @@
 const projectList = [
     {
-        id:1,
+        id:8,
+        title:'Retro Lanes',
+        summary:'Sticking with bowling theme with my projects, I wanted to create a website that could be used by a local bowling alley. In talks with a bowling alley about it buying it so keeping it private for now.',
+        img:require('../images/retroLanesReduced.png'),
+        website:'https://festive-keller-753d09.netlify.app/',
+        gitHub:'#Contact',
+        public:false,
+        techStack:'React'
+    },
+    {
+        id:7,
+        title:'Urban Tree Specialists',
+        summary:'I wanted to re-imagine a local KC company\'s website. Trying to give a fresh look to their current site. Using react router to navigate to different routes.',
+        img:require('../images/utsReduced.png'),
+        website:'https://pensive-raman-96913f.netlify.app/',
+        gitHub:'#Contact',
+        public:false,
+        techStack:'React'
+    },
+    {
+        id:6,
         title:'Bowling Buddy',
         summary:'Keep track of your bowling games and stats. You can select your ball, alley, and type of bowling for each game. Track your progress and use stats to improve your game.',
         img:require('../images/bowlingBuddyReduced.png'),
@@ -10,7 +30,7 @@ const projectList = [
         techStack:'React, Node, MySQL'
     },
     {
-        id:2,
+        id:5,
         title:'Search The News',
         summary:'Search for your news using a Google like search. Widgets display your local weather and a random Dow Jones stock. Styled the app with Semantic UI.',
         img:require('../images/searchReduced.png'),
@@ -20,7 +40,7 @@ const projectList = [
         techStack:'React, Node'
     },
     {
-        id:3,
+        id:4,
         title:'Video Poker',
         summary:'Play video poker online. Taking a casino game and bringing it to the web. Play up to 4 credits. Keep track of your wins and win percentage while you play.',
         img:require('../images/videoPokerReduced.png'),
@@ -30,9 +50,9 @@ const projectList = [
         techStack:'React, Node'
     },
     {
-        id:4,
+        id:3,
         title:'SocialUp',
-        summary:'A social chat application for large groups. SocialUp helps people find their fit within their group by joining circles and doing the things they currently enjoy. This was my website for the startup I used to run.',
+        summary:'A social chat application for large groups. SocialUp helps people find their fit within their group by joining circles and doing the things they currently enjoy. I wanted to redo the website for the startup I used to run.',
         img:require('../images/socialUpReduced.png'),
         website:'https://socialup-new.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/socialUp_react_website',
@@ -40,7 +60,7 @@ const projectList = [
         techStack:'React, Node'
     },
     {
-        id:5,
+        id:2,
         title:'BlackJack',
         summary:'Play blackjack online. Start with $500 and see how much you can win! I built this with HTML, CSS, and vanilla JavaScript. Rules are similar to what you see at a casino.',
         img:require('../images/blackJackReduced.png'),
@@ -50,7 +70,7 @@ const projectList = [
         techStack:'HTML, CSS, JavaScript'
     },
     {
-        id:6,
+        id:1,
         title:'Bowling Calculator',
         summary:'My first JavaScript project. A simple web app that caluclates your score based off the number of pins you knock down. Learned a lot along the way and really help me start to grasp some of the fundamentals of JavaScript.',
         img:require('../images/bowlReduced.png'),
