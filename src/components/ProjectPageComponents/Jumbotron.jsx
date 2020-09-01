@@ -1,5 +1,6 @@
 import React from "react";
 import CancelIcon from '@material-ui/icons/Cancel';
+import { colors } from "@material-ui/core";
 const Jumbotron = (props) => {
     const styles = {
         jumboTron:{
@@ -38,7 +39,7 @@ const Jumbotron = (props) => {
             top: 15,
             left:25,
             fontSize: 48,
-            color:'white',
+            color:props.darkMode ? colors.light : 'gray',
             zIndex:3,
             cursor:'pointer'
         }
@@ -48,7 +49,7 @@ const Jumbotron = (props) => {
         <div style={styles.cancelContainer} onClick={props.onClick}><CancelIcon fontSize="large"/></div>
       <img src={require("../../images/lane2.jpg")} style={styles.jumboTronImg} />
       <div style={styles.jumboTextContainer}>
-        <h2 style={{ fontSize: 48 }}>Bowling Buddy</h2>
+        <h2 style={{ fontSize: 48 }}>{props.title}</h2>
       </div>
       <div style={styles.opacityFilter}></div>
     </div>

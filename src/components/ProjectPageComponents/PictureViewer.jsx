@@ -31,7 +31,7 @@ const PictureViewer = (props) => {
     <div style={styles.container}>
       <div style={styles.imgArrowContainer}>
         <div style={styles.arrowContainer}><ArrowBackIosIcon /></div>
-        <img src={require('../../images/lane2.jpg')} style={styles.img}/>
+        <img src={require('../../images/retroLanes.png')} style={styles.img}/>
         <div style={styles.arrowContainer}><ArrowForwardIosIcon /></div>
       </div>
     </div>

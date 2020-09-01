@@ -16,12 +16,12 @@ const InfoItems = (props) => {
   return (
     <div style={styles.linkInfoContainer}>
       <div style={styles.linkContainer}>
-        <div style={styles.link}>Type: Client</div>
-        <div style={styles.link}>Tech Stack: React, Node, MySQL</div>
+        <div style={styles.link}>Type: {props.type}</div>
+        <div style={styles.link}>Code: <a href={props.code} target={props.public ? "blank" : ""}>{props.public ? 'Github' : 'Request For Access'}</a></div>
       </div>
       <div style={styles.linkContainer}>
-        <div style={styles.link}>Code: Request For Access</div>
-        <div style={styles.link}>Website: View Site</div>
+        <div style={styles.link}>Tech Stack: {props.tech}</div>
+        <div style={styles.link}>Website: <a href={props.site} target="blank">View Website</a></div>
       </div>
     </div>
   );

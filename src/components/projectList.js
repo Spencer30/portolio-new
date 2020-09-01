@@ -7,7 +7,8 @@ const projectList = [
         website:'https://festive-keller-753d09.netlify.app/',
         gitHub:'#Contact',
         public:false,
-        techStack:'React'
+        techStack:'React, React Router',
+        type:'Client',
     },
     {
         id:7,
@@ -17,7 +18,8 @@ const projectList = [
         website:'https://pensive-raman-96913f.netlify.app/',
         gitHub:'#Contact',
         public:false,
-        techStack:'React'
+        techStack:'React, React Router',
+        type:'Client',
     },
     {
         id:6,
@@ -27,7 +29,8 @@ const projectList = [
         website:'https://www.bowling-buddy.com/',
         gitHub:'#Contact',
         public:false,
-        techStack:'React, Node, MySQL'
+        techStack:'React, Node, MySQL',
+        type:'Personal',
     },
     {
         id:5,
@@ -37,7 +40,8 @@ const projectList = [
         website:'https://search-the-news.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/search-the-news',
         public:true,
-        techStack:'React, Node'
+        techStack:'React, Node',
+        type:'Personal',
     },
     {
         id:4,
@@ -47,7 +51,8 @@ const projectList = [
         website:'https://play-video-poker.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/video_poker',
         public:true,
-        techStack:'React, Node'
+        techStack:'React, Node',
+        type:'Personal',
     },
     {
         id:3,
@@ -57,7 +62,8 @@ const projectList = [
         website:'https://socialup-new.herokuapp.com/',
         gitHub:'https://github.com/Spencer30/socialUp_react_website',
         public:true,
-        techStack:'React, Node'
+        techStack:'React, Node',
+        type:'Personal',
     },
     {
         id:2,
@@ -67,7 +73,8 @@ const projectList = [
         website:'https://spencer30.github.io/simple_blackjack/',
         gitHub:'https://github.com/Spencer30/simple_blackjack',
         public:true,
-        techStack:'HTML, CSS, JavaScript'
+        techStack:'HTML, CSS, JavaScript',
+        type:'Personal',
     },
     {
         id:1,
@@ -77,7 +84,9 @@ const projectList = [
         website:'https://spencer30.github.io/bowling-calculator/',
         gitHub:'https://github.com/Spencer30/bowling-calculator',
         public:true,
-        techStack:'HTML, CSS, JavaScript'
+        techStack:'HTML, CSS, JavaScript',
+        type:'Personal',
+
     }
     // {
     //     id:7,

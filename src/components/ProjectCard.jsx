@@ -15,17 +15,18 @@ const ProjectCard = (props) => {
     }
 
   return (
-    <div className="card" onMouseOver={handleOver} onMouseOut={handleOut} onClick={props.goToProject} style={{cursor:'pointer'}}>
-      <div style={{ textAlign: "center", position:'relative', width:'100%' }}>
-        <img className="projectPic" src={props.img} alt="project snapshot"/>
-        <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
+    <div id={props.id} className="card" onMouseOver={handleOver} onMouseOut={handleOut} onClick={props.goToProject} style={{cursor:'pointer',zIndex:5}}>
+      <div id={props.id} style={{ textAlign: "center", position:'relative', width:'100%' }}>
+        <img id={props.id} className="projectPic" src={props.img} alt="project snapshot"/>
+        {/* <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
             <h2 style={{color:'white'}}>Tech Stack:</h2>
             <h4 style={{color:'#b43088'}}>{props.techStack}</h4>
-        </div>
+        </div> */}
       </div>
-      <div className="cardText" style={{color: props.darkMode ? colors.light : '' }}>
-        <h2 style={{ marginBottom: 3 }}>{props.title}</h2>
+      <div id={props.id} className="cardText" style={{color: props.darkMode ? colors.light : '' }}>
+        <h2 id={props.id} style={{ marginBottom: 3 }}>{props.title}</h2>
         <hr
+          id={props.id}
           style={{
             border: "3px solid #b43088",
             width: 225,
@@ -34,8 +35,9 @@ const ProjectCard = (props) => {
             marginTop: 10
           }}
         ></hr>
-        <p style={{height:100}}>{props.summary}</p>
+        <p id={props.id} style={{height:100}}>{props.summary}</p>
         <div
+          id={props.id}
           style={{
             display: "flex",
             alignItems: "center",
