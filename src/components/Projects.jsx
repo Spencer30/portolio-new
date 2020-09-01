@@ -19,6 +19,7 @@ const Projects = props => {
         public={card.public}
         techStack={card.techStack}
         darkMode={props.darkMode}
+        goToProject={props.goToProject}
         alt="project"
       />
     );

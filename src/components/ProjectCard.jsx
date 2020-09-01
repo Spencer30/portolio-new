@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
     }
 
   return (
-    <div className="card" onMouseOver={handleOver} onMouseOut={handleOut}>
+    <div className="card" onMouseOver={handleOver} onMouseOut={handleOut} onClick={props.goToProject} style={{cursor:'pointer'}}>
       <div style={{ textAlign: "center", position:'relative', width:'100%' }}>
         <img className="projectPic" src={props.img} alt="project snapshot"/>
         <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
