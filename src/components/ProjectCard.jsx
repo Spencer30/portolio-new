@@ -1,17 +1,17 @@
-import React, {useState} from "react";
+import React from "react";
 import LanguageIcon from "@material-ui/icons/Language";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import colors from './colors';
 
 const ProjectCard = (props) => {
-    const [hover, setHover] = useState(false);
+    // const [hover, setHover] = useState(false);
 
     const handleOver = () => {
-      setHover(() => true)
+      // setHover(() => true)
     }
     
     const handleOut = () => {
-      setHover(() => false)
+      // setHover(() => false)
     }
 
   return (

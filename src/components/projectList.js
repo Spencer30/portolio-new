@@ -21,6 +21,13 @@ const bowl = [
     require('../images/bowl4.png'),
     require('../images/bowl5.png'),
 ]
+const news = [
+    require('../images/news0.png'),
+    require('../images/news1.png'),
+    require('../images/news2.png'),
+    require('../images/news3.png'),
+    require('../images/news4.png'),
+]
 const poker = [
     require('../images/poker1.png'),
     require('../images/poker2.png'),
@@ -35,7 +42,6 @@ const social = [
     require('../images/social3.png'),
     require('../images/social4.png'),
 ]
-
 const blackJack = [
     require('../images/bj1.png'),
     require('../images/bj2.png'),
@@ -102,7 +108,7 @@ const projectList = [
         summary: 'Search for your news using a Google like search. Widgets display your local weather and a random Dow Jones stock. Styled the app with Semantic UI.',
         img: require('../images/searchReduced.png'),
         coverImage: require('../images/city.png'),
-        photos:null,
+        photos:news,
         website: 'https://search-the-news.herokuapp.com/',
         gitHub: 'https://github.com/Spencer30/search-the-news',
         public: true,

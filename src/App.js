@@ -14,8 +14,8 @@ function App() {
   const [projectId, setProjectId] = useState(null)
   const closeProjectPage = () => setProjectPage(false);
   const openProjectPage = e => {
+    if(e.target.className === 'webGitLink')return;
     setProjectId(e.target.id);
-    console.log('clicked')
     if (!projectPage) {
       const yPosition = Number(window.pageYOffset);
       setSitePositionCoords(yPosition)
