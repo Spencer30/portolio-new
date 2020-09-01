@@ -32,7 +32,7 @@ const ProjectPage = (props) => {
       alignItems: "center",
     },
     contentContainer: {
-      width: "60%",
+      width: "55%",
       paddingTop: 50,
     },
     textInfoContainer: {
@@ -43,6 +43,11 @@ const ProjectPage = (props) => {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent:'space-evenly'
+    },
+    paragraph: {
+        fontSize: 18,
+        letterSpacing:.5,
+        lineHeight:1.8
     }
   };
   if(!selectedProject){
@@ -50,48 +55,34 @@ const ProjectPage = (props) => {
   }
   return (
     <div style={styles.page}>
-      <Jumbotron onClick={props.closeProject} darkMode={props.darkMode} title={selectedProject.title} />
+      <Jumbotron onClick={props.closeProject} darkMode={props.darkMode} title={selectedProject.title} coverImg={selectedProject.coverImage}/>
       <div style={styles.sectionContainer}>
         <div style={styles.contentContainer}>
           <div style={styles.textInfoContainer}>
-            <h3>Overview</h3>
-            <p>
-            {selectedProject.summary}
+            <h2>Overview</h2>
+            <p style={styles.paragraph}>
+            {selectedProject.overview}
             </p>
           </div>
-          <InfoItems tech={selectedProject.techStack} type={selectedProject.type} code={selectedProject.gitHub} site={selectedProject.website} public={selectedProject.public} />
-          <PictureViewer />
+          <InfoItems tech={selectedProject.techStack} type={selectedProject.type} code={selectedProject.gitHub} site={selectedProject.website} public={selectedProject.public} darkMode={props.darkMode}/>
+          <PictureViewer photos={selectedProject.photos}/>
         </div>
 
         <div style={styles.contentContainer}>
           <div style={styles.textInfoContainer}>
-            <h3>Web Stack Explanation</h3>
-            <p>
-              Keep track of your bowling games and stats. You can select your
-              ball, alley, and type of bowling for each game. Track your
-              progress and use stats to improve your game.Keep track of your
-              bowling games and stats. You can select your ball, alley, and type
-              of bowling for each game. Track your progress and use stats to
-              improve your game.Keep track of your bowling games and stats. You
-              can select your ball, alley, and type of bowling for each game.
-              Track your progress and use stats to improve your game.
+            <h2>Web Stack Explanation</h2>
+            <p style={styles.paragraph}>
+                {selectedProject.stackReasons}
             </p>
           </div>
           <div style={styles.textInfoContainer}>
-            <h3>Challenges</h3>
-            <p>
-              Keep track of your bowling games and stats. You can select your
-              ball, alley, and type of bowling for each game. Track your
-              progress and use stats to improve your game.Keep track of your
-              bowling games and stats. You can select your ball, alley, and type
-              of bowling for each game. Track your progress and use stats to
-              improve your game.Keep track of your bowling games and stats. You
-              can select your ball, alley, and type of bowling for each game.
-              Track your progress and use stats to improve your game.
+            <h2>Challenges</h2>
+            <p style={styles.paragraph}>
+                {selectedProject.challenges}
             </p>
           </div>
           <div style={styles.textInfoContainer}>
-            <h3>Other Projects:</h3>
+            <h2>Other Projects:</h2>
             <div style={styles.projectsContainer}>{projectList.filter(pro => pro.id !== selectedProject.id).map((card) => (
               <ProjectCard
                 key={card.id}

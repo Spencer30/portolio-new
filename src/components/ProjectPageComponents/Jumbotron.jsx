@@ -5,7 +5,7 @@ const Jumbotron = (props) => {
     const styles = {
         jumboTron:{
             width:'100%',
-            height:'50vh',
+            height:'60vh',
             position:'relative',
             display:'flex',
             justifyContent:'center',
@@ -47,9 +47,9 @@ const Jumbotron = (props) => {
   return (
     <div style={styles.jumboTron}>
         <div style={styles.cancelContainer} onClick={props.onClick}><CancelIcon fontSize="large"/></div>
-      <img src={require("../../images/lane2.jpg")} style={styles.jumboTronImg} />
+      <img src={props.coverImg} style={styles.jumboTronImg} />
       <div style={styles.jumboTextContainer}>
-        <h2 style={{ fontSize: 48 }}>{props.title}</h2>
+        <h2 style={{ fontSize: 68 }}>{props.title}</h2>
       </div>
       <div style={styles.opacityFilter}></div>
     </div>
