@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import { useCallback } from "react";
 
 const PictureViewer = (props) => {
   const isMobile = useMediaQuery({ query: "(max-width: 750px)" });
