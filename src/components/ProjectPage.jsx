@@ -34,11 +34,11 @@ const ProjectPage = (props) => {
       alignItems: "center",
     },
     contentContainer: {
-      width: isMobile ? "85%" : "55%",
+      width: isMobile ? "95%" : "55%",
       paddingTop: 50,
     },
     textInfoContainer: {
-      margin: "45px 0",
+      margin: "45px 10px",
     },
     projectsContainer: {
       width: "100%",
@@ -62,6 +62,7 @@ const ProjectPage = (props) => {
         darkMode={props.darkMode}
         title={selectedProject.title}
         coverImg={selectedProject.coverImage}
+        coverMini={selectedProject.coverMini}
       />
       <div style={styles.sectionContainer}>
         <div style={styles.contentContainer}>
@@ -77,7 +78,7 @@ const ProjectPage = (props) => {
             public={selectedProject.public}
             darkMode={props.darkMode}
           />
-          <PictureViewer photos={selectedProject.photos} />
+          <PictureViewer photos={selectedProject.photos} id={props.projectId} />
         </div>
 
         <div style={styles.contentContainer}>
@@ -89,8 +90,8 @@ const ProjectPage = (props) => {
             <h2>Challenges</h2>
             <p style={styles.paragraph}>{selectedProject.challenges}</p>
           </div>
-          <div style={styles.textInfoContainer}>
-            <h2>Other Projects:</h2>
+          <div style={styles.null}>
+            <h2 style={{marginLeft: 10}}>Other Projects:</h2>
             <div style={styles.projectsContainer}>
               {projectList
                 .filter((pro) => pro.id !== selectedProject.id)

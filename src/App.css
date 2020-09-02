@@ -452,6 +452,7 @@ a {
     }
     .card{
       width: 100%;
+      margin: 5px 10px !important;
     }
     .projectPic{
       width: 100%;

@@ -17,7 +17,8 @@ const InfoItems = (props) => {
           display:'flex',
           flexWrap:'wrap',
           justifyContent:'space-between',
-          width:'100%'
+          width:'100%',
+          margin: '0px 10px'
         },
         link: {
             margin:isMobile ? '45px 0 0 0' : '45px 0',

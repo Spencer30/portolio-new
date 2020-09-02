@@ -37,7 +37,7 @@ function App() {
         <Projects darkMode={darkMode} goToProject={openProjectPage} />
       </div>
       <div style={{ display: projectPage ? 'block' : 'none' }}>
-        <ProjectPage darkMode={darkMode} closeProject={closeProjectPage} display={projectPage} projectId={projectId} goToProject={openProjectPage} />
+        <ProjectPage darkMode={darkMode} closeProject={closeProjectPage} display={projectPage} projectId={projectId} goToProject={openProjectPage}/>
       </div>
       <Contact darkMode={darkMode} />
     </div>
