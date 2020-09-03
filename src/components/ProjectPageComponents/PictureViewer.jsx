@@ -48,7 +48,7 @@ const PictureViewer = (props) => {
     },
     img: {
       height: "100%",
-      width: isMobile ? "100vw" : "100%",
+      width: isMobile ? "95vw" : "100%",
     },
     arrowContainer: {
       display: isMobile ? "none" : "flex",

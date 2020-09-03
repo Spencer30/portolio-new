@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useMediaQuery } from "react-responsive";
 import CancelIcon from "@material-ui/icons/Cancel";
 import { colors } from "@material-ui/core";
+import { useEffect } from "react";
 const Jumbotron = (props) => {
   const isMobile = useMediaQuery({ query: "(max-width: 750px)" });
   const [loaded, setLoaded] = useState(false);
+  const picRef = useRef(props.id)
+  useEffect(() => {
+    if(picRef.current !== props.id) setLoaded(false)
+  }, [props.id])
   const styles = {
     jumboTron: {
       width: "100%",
@@ -54,6 +59,7 @@ const Jumbotron = (props) => {
         <CancelIcon fontSize="large" />
       </div>
       <img src={loaded ? props.coverImg : props.coverMini} style={styles.jumboTronImg} alt={props.alt} onLoad={() => setLoaded(true)}/>
+      {/* <img src={loaded ? props.coverImg : props.coverMini} style={styles.jumboTronImg} alt={props.alt} onLoad={() => console.log('loaded ')}/> */}
       <div style={styles.jumboTextContainer}>
         <h2 style={{ fontSize: isMobile ? 45 : 68 }}>{props.title}</h2>
       </div>

@@ -63,6 +63,7 @@ const ProjectPage = (props) => {
         title={selectedProject.title}
         coverImg={selectedProject.coverImage}
         coverMini={selectedProject.coverMini}
+        id={props.projectId}
       />
       <div style={styles.sectionContainer}>
         <div style={styles.contentContainer}>
