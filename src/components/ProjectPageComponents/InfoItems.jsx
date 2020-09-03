@@ -36,7 +36,7 @@ const InfoItems = (props) => {
         <div style={styles.link}>Tech Stack: {props.tech}</div>
       </div>
       <div style={styles.linkContainer}>
-      <div style={styles.link}>Code: <a style={styles.siteLink} href={props.code} target={props.public ? "blank" : ""}>{props.public ? 'Github' : 'Request For Access'}</a></div>
+      <div style={styles.link}>Code: <a style={styles.siteLink} href={props.code} target={props.public ? "blank" : ''}>{props.public ? 'Github' : 'Request For Access'}</a></div>
         <div style={styles.link}>Website: <a style={styles.siteLink} href={props.site} target="blank">View Website</a></div>
       </div>
     </div>
