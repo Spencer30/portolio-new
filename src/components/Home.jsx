@@ -21,7 +21,7 @@ const Home = (props) => {
               Spencer Lyons
             </span>
           </h1>
-          <h3 className="subTitle">A Software Devloper</h3>
+          <h3 className="subTitle">A Software Developer</h3>
         </div>
       <div style={{...styles.blackCover, opacity:props.darkMode ? '60%' : '25%'}}>
       </div>
