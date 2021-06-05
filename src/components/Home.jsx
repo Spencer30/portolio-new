@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import { useState } from "react";
+import colors from "./colors";
 
 const Home = (props) => {
   const [loaded, setLoaded] = useState(false)
@@ -12,12 +13,12 @@ const Home = (props) => {
       }}
       className="bgImage"
     >
-      <img alt="waterfall" src={require(`../images/waterfallReduced1${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
+      <img alt="waterfall" src={require(`../images/darkSky${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange} />
         <div className="homeTextContainer" style={styles.textContainer}>
           <h1 className="mainTitle">
             Hi! I'm{" "}
-            <span style={{ color: props.darkMode ? "#b43088" : "white" }}>
+            <span style={{ color: colors.pink  }}>
               Spencer Lyons
             </span>
           </h1>
@@ -41,7 +42,7 @@ const styles = {
     zIndex: 5,
   },
   blackCover: {
-    backgroundColor: "black",
+    // backgroundColor: "black",
     width: "100%",
     height: "100%",
     opacity: '75%',

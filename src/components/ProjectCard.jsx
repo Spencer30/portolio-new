@@ -20,7 +20,7 @@ const ProjectCard = (props) => {
         <img id={props.id} className="projectPic" src={props.img} alt="project snapshot"/>
         {/* <div className="imgOverlay" style={{display: hover ? 'flex' : 'none', flexDirection:'column', justifyContent:'center'}}>
             <h2 style={{color:'white'}}>Tech Stack:</h2>
-            <h4 style={{color:'#b43088'}}>{props.techStack}</h4>
+            <h4 style={{color:''}}>{props.techStack}</h4>
         </div> */}
       </div>
       <div id={props.id} className="cardText" style={{color: props.darkMode ? colors.light : '' }}>
@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
         <hr
           id={props.id}
           style={{
-            border: "3px solid #b43088",
+            border: `3px solid ${colors.pink}`,
             width: 225,
             borderRadius: 25,
             margin: 0,

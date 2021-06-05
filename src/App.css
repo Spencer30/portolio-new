@@ -3,7 +3,7 @@
     #0D1B1E
     #C3DBC5
     #E8DCB9
-    #b43088
+    #da0d62
 */
 
 body {
@@ -30,7 +30,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .navBar {
@@ -58,7 +58,7 @@ a {
 }
 
 .navLink:hover {
-  color:#b43088;
+  color:#da0d62;
 }
 
 .navLink {
@@ -109,13 +109,13 @@ a {
   opacity: .9;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  color: #b43088;
+  color: #da0d62;
   width: 100%;
 }
 
 .hr-text:before {
   content: '';
-  background: linear-gradient(to right, transparent, #b43088, transparent);
+  background: linear-gradient(to right, transparent, #da0d62, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -144,13 +144,13 @@ a {
   opacity: .9;
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
-  color: #b43088;
+  color: #da0d62;
   width: 100%;
 }
 
 .hr-text-dark:before {
   content: '';
-  background: linear-gradient(to right, transparent, #b43088, transparent);
+  background: linear-gradient(to right, transparent, #da0d62, transparent);
   position: absolute;
   left: 0;
   top: 50%;
@@ -191,7 +191,7 @@ a {
 
 .profilePic {
   border-radius: 50%;
-  border: 5px solid #b43088;
+  border: 5px solid #da0d62;
 
 }
 
@@ -258,7 +258,7 @@ a {
   list-style-type: circle;
   list-style-position: outside;
   list-style-image: none;
-  color: #b43088;
+  color: #da0d62;
   font-size: 20px;
 }
 
@@ -319,7 +319,7 @@ a {
   color:#7798AB;
 }
 .webGitLink:hover{
-  color:#b43088;
+  color:#da0d62;
 }
 
 
@@ -364,7 +364,7 @@ a {
 }
 
 .email:hover{
-  color:#b43088;
+  color:#da0d62;
 }
 
 .star {
