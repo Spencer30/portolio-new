@@ -39,20 +39,24 @@ const Skills = props => {
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >CSS</span></li>
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >JavaScript</span></li>
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >React</span></li>
+        <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >React Native</span></li>
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >Node</span></li>
+        <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >Vue</span></li>
+        <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >C#</span></li>
+
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >SQL</span></li>
       </ul>
     </div>
-    <div style={{textAlign:'center'}}>
+    {/* <div style={{textAlign:'center'}}>
     <h2 style={{color:props.darkMode ? colors.light : '#0D1B1E', fontWeight: 200}}>I'm currently learning:</h2>
     </div>
     <div style={{display: 'flex', flexWrap:'wrap', justifyContent:'center'}}>
       <ul className="skillList" style={{display: 'flex', flexWrap:'wrap', justifyContent:'center'}}>
-        <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >React Native</span></li>
+
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >Redux</span></li>
         <li className="skillBullets"><span style={{color:props.darkMode ? colors.light : '#0D1B1E'}} >Java</span></li>
       </ul>
-    </div>
+    </div> */}
     </div>
   );
 };
