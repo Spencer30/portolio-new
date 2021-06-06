@@ -13,7 +13,11 @@ const Home = (props) => {
       }}
       className="bgImage"
     >
-      <img alt="waterfall" src={require(`../images/darkSky${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
+      <img alt="night sky" src={require(`../images/darkSky${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
+      <img src={require(`../images/star.png`)} style={styles.star1} className="homeStar" alt="star"/>
+      <img src={require(`../images/star.png`)} style={styles.star2} className="homeStar" alt="star"/>
+      <img src={require(`../images/star.png`)} style={styles.star3} className="homeStar" alt="star"/>
+
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange} />
         <div className="homeTextContainer" style={styles.textContainer}>
           <h1 className="mainTitle">
@@ -54,6 +58,24 @@ const styles = {
     height: '100%',
     top: 0,
     left: 0,
+  },
+  star1: {
+    position: 'absolute',
+    left: 225,
+    top: 275,
+    width: 7,
+  },
+  star2: {
+    position: 'absolute',
+    right: 225,
+    top: 275,
+    width: 7,
+  },
+  star3: {
+    position: 'absolute',
+    right: '50%',
+    top: '50%',
+    width: 7,
   }
 };
 

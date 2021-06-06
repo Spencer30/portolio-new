@@ -402,6 +402,12 @@ a {
   }
 }
 
+.homeStar { 
+  animation: fadeIn 3s infinite alternate;
+}
+@keyframes fadeIn { 
+  from { opacity: 0; } 
+}
 
 
 @media only screen 
