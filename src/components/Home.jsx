@@ -14,9 +14,6 @@ const Home = (props) => {
       className="bgImage"
     >
       <img alt="night sky" src={require(`../images/darkSky${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
-      <img src={require(`../images/star.png`)} style={styles.star1} className="homeStar" alt="star"/>
-      <img src={require(`../images/star.png`)} style={styles.star2} className="homeStar" alt="star"/>
-      <img src={require(`../images/star.png`)} style={styles.star3} className="homeStar" alt="star"/>
 
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange} />
         <div className="homeTextContainer" style={styles.textContainer}>
@@ -30,6 +27,9 @@ const Home = (props) => {
         </div>
       <div style={{...styles.blackCover, opacity:props.darkMode ? '60%' : '25%'}}>
       </div>
+      <img src={require(`../images/star.png`)} className="homeStar1" alt="star"/>
+      <img src={require(`../images/star.png`)} className="homeStar2" alt="star"/>
+      <img src={require(`../images/star.png`)} className="homeStar3" alt="star"/>
     </div>
   );
 };
@@ -63,19 +63,19 @@ const styles = {
     position: 'absolute',
     left: 225,
     top: 275,
-    width: 7,
+    width: 5,
   },
   star2: {
     position: 'absolute',
     right: 225,
     top: 275,
-    width: 7,
+    width: 5,
   },
   star3: {
     position: 'absolute',
     right: '50%',
     top: '50%',
-    width: 7,
+    width: 5,
   }
 };
 
