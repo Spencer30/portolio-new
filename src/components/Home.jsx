@@ -13,13 +13,15 @@ const Home = (props) => {
       }}
       className="bgImage"
     >
-      <img alt="night sky" src={require(`../images/darkSky${!loaded ? 'Loading': ''}.jpg`)} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
+      <img alt="night sky" src={require(
+        props.darkMode ? loaded ? '../images/darkSky.jpg' : '../images/darkSkyLoading.jpg' : loaded ? '../images/beach.jpg' : '../images/beach-sm.jpg'
+        )} style={styles.bgImage} onLoad={() => setLoaded(true)}/>
 
       <Nav darkMode={props.darkMode} onDarkChange={props.onDarkChange} />
         <div className="homeTextContainer" style={styles.textContainer}>
           <h1 className="mainTitle">
             Hi! I'm{" "}
-            <span style={{ color: colors.pink  }}>
+            <span style={{ color: props.darkMode ? colors.pink : colors.white }}>
               Spencer Lyons
             </span>
           </h1>

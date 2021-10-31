@@ -28,6 +28,11 @@ function App() {
     }
   }, [projectPage, sitePositionCoords])
   const darkModeChange = () => setDarkMode(pre => !pre)
+  useEffect(() => {
+    const time = new Date().getHours()
+    if(time > 7 && time < 19)  return setDarkMode(false)
+    setDarkMode(true)
+  }, [])
   return (
     <div className="App">
       <div style={{ display: projectPage ? 'none' : 'block' }}>
