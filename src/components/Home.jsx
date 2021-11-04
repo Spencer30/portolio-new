@@ -29,9 +29,9 @@ const Home = (props) => {
         </div>
       <div style={{...styles.blackCover, opacity:props.darkMode ? '60%' : '25%'}}>
       </div>
-      <img src={require(`../images/star.png`)} className="homeStar1" alt="star"/>
-      <img src={require(`../images/star.png`)} className="homeStar2" alt="star"/>
-      <img src={require(`../images/star.png`)} className="homeStar3" alt="star"/>
+      <img src={require(`../images/star.png`)} className="homeStar1" alt="star" style={{display: props.darkMode ? 'flex' : 'none'}}/>
+      <img src={require(`../images/star.png`)} className="homeStar2" alt="star" style={{display: props.darkMode ? 'flex' : 'none'}}/>
+      <img src={require(`../images/star.png`)} className="homeStar3" alt="star" style={{display: props.darkMode ? 'flex' : 'none'}}/>
     </div>
   );
 };
