@@ -15,7 +15,7 @@ const ProjectPage = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0);
     const project = projectList.filter((pro) => pro.id === Number(projectId));
-    console.log(project);
+    // console.log(project);
     setSelectedProject(project[0]);
   }, [display, projectId]);
   const styles = {
